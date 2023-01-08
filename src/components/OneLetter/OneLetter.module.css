@@ -1,0 +1,20 @@
+.letter {
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.letter--disabled {
+  opacity: 0.5;
+  background-color: #ccc;
+  /* pointer-events: none; */
+}
+
+.letter:hover {
+  opacity: 0.5;
+}
