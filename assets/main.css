@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #3ee1ac, #1d2b25);
+  font-family: 'Roboto';
+}
+
+.container {
+  width: 1020px;  
+  margin: 0 auto;
+  
+}
+
+.title {
+  font-family: 'Libre Baskerville';
+  text-align: center;
+  letter-spacing: 3px;
+  color: white;
+  font-size: 45px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+}
+
+.selected-letters__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;  
+  color: #fff;  
+  transition: 0.5s;
+  margin-right: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase; 
+  background: #6fdd83;
+	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+	transition-delay: 0.5;
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+.selected-letters__list {
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.letters-list {
+  display: flex;
+}
+
+.letters-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 10px;  
+  color: #fff;  
+  transition: 0.5s; 
+  margin-right: 12px;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;  
+}
+
+.letters-list__item:last-child {
+  margin-right: 0;
+}
+
+.letters-list__item:hover{
+  content: "";
+  background: #6fdd83;
+	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.5s;
+	transition-delay: 0.5;
+  transform: scale(1.05); 
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.buttons-btn {
+  padding: 15px;
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  background: rgba(17, 131, 164, 0.58);
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  /* transition-delay: 0.5; */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.buttons-btn:hover {
+  content: "";
+  background: #25b1c8;
+  box-shadow: 0 0 5px #25b1c8, 0 0 10px #25b1c8, 0 0 10px #25b1c8, 0 0 40px #25b1c8, 0 15px 15px rgba(10, 22, 28, 0.3);
+	transition: 0.5s;
+	transition-delay: 0.1s;
+  transform: scale(1.1); 
+  cursor: pointer;
+}
+
+.buttons-btn:focus {
+  background: #36c1d8;
+  box-shadow: 0 0 5px #25b1c8, 0 0 10px #25b1c8, 0 0 10px #25b1c8, 0 0 40px #25b1c8, 0 15px 15px rgba(10, 22, 28, 0.3);
+}
+
+.red--btn {
+  background: rgba(249, 11, 11, 0.33);
+}
+
+.red--btn:hover {
+  background: #fb5050;
+  box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
+}
+
+.red--btn:focus {
+  background: #ee6262;
+  box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
+}
