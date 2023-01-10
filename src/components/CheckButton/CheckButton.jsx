@@ -19,7 +19,7 @@ function CheckButton({answer, emitAnswer}) {
    
   }
   return (
-    <button onClick={check}>Check</button>
+    <button className="btn" onClick={check}>Check</button>
   );
 }
 

@@ -80,9 +80,13 @@ function WordList({ word }) {
   return (
     <>
       <Answer letters={answer}/>
-      <div className={styles['word-list']}>{letterList}</div>
-      {answer.length > 0 && <CheckButton answer={answer} emitAnswer={updateAnswers}/>}
-      {answer.length > 0 && <button onClick={clearLetters}>Clear</button>}
+      <ul className={styles['letters-list']}>{letterList}</ul>
+      <div className={styles.buttons}>
+        <CheckButton answer={answer} emitAnswer={updateAnswers}/>
+        <button className="btn btn--red" onClick={clearLetters}>Clear</button>
+        {/* {answer.length > 0 && <CheckButton answer={answer} emitAnswer={updateAnswers}/>}
+        {answer.length > 0 && <button className="btn btn--red" onClick={clearLetters}>Clear</button>} */}
+      </div>      
       {resultScore !== 0 && <ResultText score={resultScore}/>}
     </>
     

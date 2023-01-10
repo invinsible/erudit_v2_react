@@ -3,26 +3,35 @@
   padding: 0;
 }
 
-body {
-  min-height: 100vh;
+body {  
   background: linear-gradient(to bottom, #3ee1ac, #1d2b25);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
-  width: 1020px;  
+  max-width: 1020px;  
   margin: 0 auto;
-  
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .title {
-  font-family: 'Libre Baskerville';
+  margin-bottom: 50px;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 45px;
   text-align: center;
   letter-spacing: 3px;
-  color: white;
-  font-size: 45px;
-  margin-top: 200px;
-  margin-bottom: 50px;
+  color: #fff;
+}
+
+.selected-letters {
+  margin-bottom: 35px;
+  display: flex;
 }
 
 .selected-letters__item {
@@ -31,29 +40,23 @@ body {
   align-items: center;
   width: 50px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 10px;  
-  color: #fff;  
-  transition: 0.5s;
   margin-right: 12px;
-  font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase; 
-  background: #6fdd83;
+  padding: 10px;
+
+  color: #fff;
+  font-size: 25px;  
+  text-transform: uppercase;
+
+  background-color: #6fdd83;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
+  border-radius: 20px;
 	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
+
 	transition: 0.5s;
 	transition-delay: 0.5;
-  transform: scale(1.05); 
+  transform: scale(1.05);
   cursor: pointer;
-}
-
-.selected-letters__list {
-  margin-bottom: 35px;
-  display: flex;
 }
 
 .letters-list {
@@ -66,31 +69,32 @@ body {
   align-items: center;
   width: 50px;
   height: 50px;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 10px;  
-  color: #fff;  
-  transition: 0.5s; 
   margin-right: 12px;
+  padding: 10px;
+
+  color: #fff;
   font-size: 25px;
-  font-weight: bold;
-  text-transform: uppercase;  
+  text-transform: uppercase; 
+
+  background-color: rgba(255, 255, 255, 0.05);  
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
+  border-radius: 20px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+  
+  transition: 0.5s;   
 }
 
 .letters-list__item:last-child {
   margin-right: 0;
 }
 
-.letters-list__item:hover{
-  content: "";
-  background: #6fdd83;
+.letters-list__item:hover {
+  background-color: #6fdd83;
 	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
 	transition: 0.5s;
 	transition-delay: 0.5;
-  transform: scale(1.05); 
+  transform: scale(1.05);
   cursor: pointer;
 }
 
@@ -100,25 +104,25 @@ body {
   margin-top: 35px;
 }
 
-.buttons-btn {
+.btn {
+  margin: 0 50px;
   padding: 15px;
+
   font-family: 'Libre Baskerville';
   font-size: 18px;
-  background: rgba(17, 131, 164, 0.58);
-  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
-  border: 2px solid rgba(255, 255, 255, 0.05);
-  border-radius: 20px;
   color: #fff;
   letter-spacing: 1px;
+
+  background-color: rgba(17, 131, 164, 0.58);  
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
+ 
   transition: 0.5s;
-  /* transition-delay: 0.5; */
-  margin-left: 50px;
-  margin-right: 50px;
 }
 
-.buttons-btn:hover {
-  content: "";
-  background: #25b1c8;
+.btn:hover {
+  background-color: #25b1c8;
   box-shadow: 0 0 5px #25b1c8, 0 0 10px #25b1c8, 0 0 10px #25b1c8, 0 0 40px #25b1c8, 0 15px 15px rgba(10, 22, 28, 0.3);
 	transition: 0.5s;
 	transition-delay: 0.1s;
@@ -126,21 +130,21 @@ body {
   cursor: pointer;
 }
 
-.buttons-btn:focus {
-  background: #36c1d8;
+.btn:focus {
+  background-color: #36c1d8;
   box-shadow: 0 0 5px #25b1c8, 0 0 10px #25b1c8, 0 0 10px #25b1c8, 0 0 40px #25b1c8, 0 15px 15px rgba(10, 22, 28, 0.3);
 }
 
-.red--btn {
-  background: rgba(249, 11, 11, 0.33);
+.btn--red {
+  background-color: rgba(249, 11, 11, 0.33);
 }
 
-.red--btn:hover {
-  background: #fb5050;
+.btn--red:hover {
+  background-color: #fb5050;
   box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
 }
 
-.red--btn:focus {
-  background: #ee6262;
+.btn--red:focus {
+  background-color: #ee6262;
   box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
 }

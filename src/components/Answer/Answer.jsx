@@ -3,14 +3,14 @@ import styles from './Answer.module.css';
 function Answer({ letters }) {
   const lettersList = letters.map((el, index) => {
     if (el.status) {
-      return <p key={index}>{el.value}</p>
+      return <li key={index} className={styles['selected-letters__item']}>{el.value}</li>
     }
     return null;
   }   
     
   )
   return (
-    <div className={styles.answer}>{lettersList}</div>
+    <ul className={styles['selected-letters']}>{lettersList}</ul>
   );
 }
 
