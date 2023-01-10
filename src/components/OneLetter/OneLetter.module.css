@@ -16,13 +16,12 @@
   border-radius: 20px;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
   
-  transition: 0.5s;   
+  transition: 0.5s;
 }
 
 .letters-list__item:hover {
   background-color: #6fdd83;
 	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
-	transition: 0.5s;
 	transition-delay: 0.5;
   transform: scale(1.05);
   cursor: pointer;

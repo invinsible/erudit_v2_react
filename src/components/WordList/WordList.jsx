@@ -79,13 +79,13 @@ function WordList({ word }) {
  
   return (
     <>
-      <Answer letters={answer}/>
+      <div className={styles['answer-wrapper']}>
+        {answer.length > 0 && <Answer letters={answer}/>}
+      </div>      
       <ul className={styles['letters-list']}>{letterList}</ul>
       <div className={styles.buttons}>
         <CheckButton answer={answer} emitAnswer={updateAnswers}/>
-        <button className="btn btn--red" onClick={clearLetters}>Clear</button>
-        {/* {answer.length > 0 && <CheckButton answer={answer} emitAnswer={updateAnswers}/>}
-        {answer.length > 0 && <button className="btn btn--red" onClick={clearLetters}>Clear</button>} */}
+        <button className="btn btn--red" onClick={clearLetters}>Clear</button>        
       </div>      
       {resultScore !== 0 && <ResultText score={resultScore}/>}
     </>
