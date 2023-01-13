@@ -99,6 +99,12 @@ body {
   cursor: pointer;
 }
 
+.letters-list__disabled {  
+  pointer-events: none;
+  box-shadow: none;
+  color: #a6a5a5;
+}
+
 .buttons {
   display: flex;
   justify-content: space-between;
@@ -152,4 +158,36 @@ body {
 .btn--red:focus {
   background-color: #ee6262;
   box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
+}
+
+.cool-skills {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: transparent;  
+  text-transform: uppercase;
+     
+}
+
+.cool-skills::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(45deg, #E5EFF2, #49c8eb, #94f69e, #92FE9D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;   
+  overflow: hidden;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  100%, 70%, 70% {
+    width: 100%;
+  }  
 }
