@@ -177,7 +177,7 @@ body {
   position: absolute;
   top: 13px;
   left: 0;
-  width: 0%;
+  width: 0;
   height: 100%;
   background: linear-gradient(45deg, #E5EFF2, #49c8eb, #94f69e, #92FE9D);
   -webkit-background-clip: text;
@@ -187,7 +187,10 @@ body {
 }
 
 @keyframes animate {
-  100%, 70%, 70% {
+  70% {
     width: 100%;
-  }  
+  } 
+  100% {
+    width: 100%;
+  } 
 }
