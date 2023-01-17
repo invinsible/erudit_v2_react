@@ -1,15 +1,4 @@
 .letters-list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-
-  color: #fff;
-  font-size: 25px;
-  text-transform: uppercase; 
-
   background-color: rgba(255, 255, 255, 0.05);  
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
@@ -27,7 +16,8 @@
   cursor: pointer;
 }
 
-.letters-list__item--disabled {
-  background-color: #6fdd83;
-	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
+.letters-list__item--disabled {  
+  pointer-events: none;
+  box-shadow: none;
+  color: #a6a5a5;
 }

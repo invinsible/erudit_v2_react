@@ -1,3 +1,5 @@
+import styles from './ResultText.module.css';
+
 function ResultText({score}) {
   let generateText = '';
   if (score > 0) {
@@ -26,7 +28,7 @@ function ResultText({score}) {
     generateText = 'Ответ не верный'
   }
   return (
-    <p>{generateText}</p>
+    <p data-text={generateText} className={styles['cool-skills']}>{generateText}</p>
   );
 }
 

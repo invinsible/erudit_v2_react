@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useMemo, useEffect } from 'react';
 import { shuffleWord } from '../../libs/shuffleWord';
 import { getRandomIntInclusive } from '../../libs/random';
@@ -85,9 +86,9 @@ function WordList({ word }) {
       <ul className={styles['letters-list']}>{letterList}</ul>
       <div className={styles.buttons}>
         <CheckButton answer={answer} emitAnswer={updateAnswers}/>
+        {resultScore !== 0 && <ResultText score={resultScore}/>}
         <button className="btn btn--red" onClick={clearLetters}>Clear</button>        
-      </div>      
-      {resultScore !== 0 && <ResultText score={resultScore}/>}
+      </div>
     </>
     
   );
