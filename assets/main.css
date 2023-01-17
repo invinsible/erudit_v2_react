@@ -4,7 +4,7 @@
 }
 
 body {  
-  background: linear-gradient(to bottom, #3ee1ac, #1d2b25);
+  background: linear-gradient(to bottom, #32cb99, #15211b);
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,7 +22,7 @@ body {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-family: 'Libre Baskerville', serif;
   font-size: 45px;
   text-align: center;
@@ -42,17 +42,17 @@ body {
   width: 50px;
   height: 50px;
   padding: 10px;
-
+  border-radius: 20px;
   color: #fff;
   font-size: 25px;  
   text-transform: uppercase;
 }
 
-.selected-letters__item {
+.selected-letters__item {  
   background-color: #6fdd83;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
-  border-radius: 20px;
+  
 	box-shadow: 0 0 5px #6fdd83, 0 0 10px #6fdd83, 0 0 10px #6fdd83, 0 0 40px #6fdd83, 0 15px 15px rgba(0, 0, 0, 0.3);
 
 	transition: 0.5s;
@@ -65,15 +65,14 @@ body {
   display: grid;
   grid-template-columns: 7% 7% 7% 7% 7%;
   justify-content: center;
-  gap: 12px;
-  margin-top: 32px;
+  gap: 12px;  
 }
 
 .letters-list__item {
   background-color: rgba(255, 255, 255, 0.05);  
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);  
-  border-radius: 20px;
+  
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
   
   transition: 0.5s;
@@ -106,6 +105,10 @@ body {
 }
 
 .answer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
   height: 72px;
 }
 
@@ -153,37 +156,18 @@ body {
   box-shadow: 0 0 5px #fb5050, 0 0 10px #fb5050, 0 0 10px #fb5050, 0 0 40px #fb5050, 0 15px 15px rgba(10, 22, 28, 0.3);
 }
 
-.cool-skills {
-  position: relative;
+.skill-answer { 
   display: flex;
   align-items: center;
   font-family: 'Libre Baskerville', serif;
   font-size: 30px;
   letter-spacing: 2px;
-  color: transparent;  
+  background: linear-gradient(45deg, #E5EFF2, #49c8eb, #94f69e, #92FE9D);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
   text-transform: uppercase;
      
 }
 
-.cool-skills::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 13px;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: linear-gradient(45deg, #E5EFF2, #49c8eb, #94f69e, #92FE9D);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;   
-  overflow: hidden;
-  animation: animate 1s linear infinite;
-}
 
-@keyframes animate {
-  70% {
-    width: 100%;
-  } 
-  100% {
-    width: 100% ;
-  } 
-}
+
