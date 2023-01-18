@@ -77,3 +77,112 @@
   }
   
 }
+
+@media (max-width: 698px) {
+  .title {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+  
+  .letter {
+    width: 15px;
+    height: 15px;
+    border-radius: 11px;
+    font-size: 16px;
+  }
+
+  .letters-list__item {
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn {
+    padding: 6px;
+    border-radius: 15px;
+    font-size: 14px;
+  }
+
+  .skill-answer {
+    font-size: 20px;    
+  }
+}
+
+@media (max-width: 614px) {
+  .letter {
+    width: 10px;
+    height: 10px;
+    border-radius: 9px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 548px) {
+  .letter {
+    width: 6px;
+    height: 6px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 494px) {
+  .title {
+    margin-bottom: 5px;
+    font-size: 28px;
+  }
+  
+  .answer-wrapper {
+    margin-bottom: 6px;
+    height: 62px;
+  }
+
+  .letter {
+    width: 3px;
+    height: 3px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 4px;
+    border-radius: 11px;
+    font-size: 13px;
+  }
+
+  .skill-answer {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 432px) {
+  .selected-letters {
+    gap: 7px;
+  }
+  
+  .letter {
+    padding: 8px;
+    width: 3px;
+    height: 3px;
+    border-radius: 5px;
+    font-size: 11px;
+  }
+
+  .letters-list {
+    gap: 7px;
+  }
+
+  .buttons {
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 0 30px;
+  }
+
+  .btn {
+    padding: 1px;
+    border-radius: 12px;
+    font-size: 11px;
+  }
+
+  .skill-answer {
+    font-size: 15px;
+  }
+}
